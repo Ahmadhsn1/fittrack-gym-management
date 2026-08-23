@@ -184,7 +184,14 @@ The same token layer, re-pointed. One attribute swap, zero component changes.
     <td width="50%"><img src="docs/screenshots/dashboard-light.png" alt="Dashboard in light mode" /></td>
     <td width="50%"><img src="docs/screenshots/members-light.png" alt="Members in light mode" /></td>
   </tr>
+  <tr>
+    <td colspan="2"><img src="docs/screenshots/memberships-light.png" alt="Membership plans in light mode" /></td>
+  </tr>
 </table>
+
+Note that semantic status colours hold constant across both themes — `--success`
+stays the same green in each, because "paid" should not change meaning with
+ambient light. Only surfaces, borders, text and shadows re-point.
 
 ### Mobile
 
