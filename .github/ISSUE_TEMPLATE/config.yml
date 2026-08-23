@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or discussion
+    url: https://github.com/Ahmadhsn1/fittrack-gym-management/discussions
+    about: For usage questions and open-ended ideas that aren't yet a bug or a feature request.

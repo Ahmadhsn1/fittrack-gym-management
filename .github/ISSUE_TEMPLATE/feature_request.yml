@@ -1,0 +1,78 @@
+name: Feature request
+description: Suggest a capability FitTrack should have
+title: "feat: "
+labels: ["enhancement", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        FitTrack aims to be a genuinely useful gym admin surface rather than a
+        kitchen sink. Framing the problem before the solution makes it much
+        easier to say yes.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the situation a gym admin is in, not the feature you want.
+      placeholder: >
+        I can see how many memberships are expiring, but I have no way to work
+        through them — I have to open each member individually to find out who
+        to call.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      placeholder: >
+        Make the "Expiring Soon" tile clickable, routing to Members pre-filtered
+        to that status and sorted by expiry date ascending.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+      description: Including "do nothing" and why that isn't enough.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area would this touch?
+      multiple: true
+      options:
+        - Dashboard
+        - Members
+        - Member details
+        - Memberships
+        - Attendance
+        - Trainers
+        - Payments
+        - Settings
+        - Design system / theming
+        - Data layer
+        - Tooling
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: How broadly useful is this?
+      options:
+        - Any gym would want it
+        - Most gyms would want it
+        - Specific to a particular workflow
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to open a pull request for this
+          required: false

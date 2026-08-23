@@ -1,0 +1,103 @@
+name: Bug report
+description: Something in FitTrack behaves incorrectly
+title: "fix: "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. The reproduction steps are the part that
+        actually gets it fixed — please be as specific as you can.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe the incorrect behaviour.
+      placeholder: Deleting a payment leaves the pending total unchanged in the page header.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+      placeholder: The pending total should recalculate immediately after the delete.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps, starting from a fresh `npm run dev`.
+      placeholder: |
+        1. Go to Payments
+        2. Filter status to "Pending"
+        3. Delete the first row
+        4. Look at the totals in the page subtitle
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area of the app?
+      options:
+        - Dashboard
+        - Members
+        - Member details
+        - Memberships
+        - Attendance
+        - Trainers
+        - Payments
+        - Settings
+        - Theming / styling
+        - Build or tooling
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Does it happen in both themes?
+      options:
+        - Both dark and light
+        - Dark only
+        - Light only
+        - Not theme related
+    validations:
+      required: false
+
+  - type: input
+    id: viewport
+    attributes:
+      label: Viewport
+      description: Approximate window width, if the issue is layout related.
+      placeholder: 390px (mobile) / 1440px (desktop)
+
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and Node version
+      placeholder: Chrome 141, Node 22.11
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console output
+      description: Any errors or warnings from the browser console.
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this is not a duplicate
+          required: true
+        - label: I can reproduce this on the latest `main`
+          required: true
