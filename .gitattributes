@@ -1,0 +1,21 @@
+# Normalize line endings so the repository always stores LF, regardless of the
+# contributor's platform or local core.autocrlf setting.
+* text=auto eol=lf
+
+# Binary assets — never touch these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+
+# Treat SVG as text so diffs stay readable.
+*.svg text eol=lf
+
+# Collapse generated files in pull request diffs.
+package-lock.json linguist-generated=true -diff
+
+# Keep screenshots out of the language statistics.
+docs/screenshots/* linguist-documentation=true

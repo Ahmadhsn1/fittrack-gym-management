@@ -1,0 +1,60 @@
+:root {
+  /* Surfaces */
+  --bg: #0A0E0D;
+  --bg-elevated: #0F1413;
+  --card: #131917;
+  --card-hover: #17201D;
+  --border: #232B28;
+  --border-strong: #2E3733;
+
+  /* Brand accent - lime */
+  --accent: #C6FF3A;
+  --accent-dim: #8FCC1F;
+  --accent-wash: rgba(198, 255, 58, 0.1);
+  --accent-wash-strong: rgba(198, 255, 58, 0.18);
+
+  /* Text */
+  --text-primary: #F5F7F5;
+  --text-secondary: #9CA6A1;
+  --text-muted: #6B7570;
+
+  /* Semantic status (kept distinct from brand accent) */
+  --success: #34D399;
+  --success-wash: rgba(52, 211, 153, 0.12);
+  --warning: #F5A623;
+  --warning-wash: rgba(245, 166, 35, 0.12);
+  --danger: #F0554A;
+  --danger-wash: rgba(240, 85, 74, 0.12);
+
+  /* Type */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --sidebar-w: 248px;
+  --topbar-h: 68px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-card: 0 1px 0 rgba(255,255,255,0.02) inset, 0 8px 24px rgba(0,0,0,0.35);
+  --topbar-bg: rgba(10, 14, 13, 0.85);
+}
+
+html[data-theme="light"] {
+  --bg: #F5F7F4;
+  --bg-elevated: #FFFFFF;
+  --card: #FFFFFF;
+  --card-hover: #F0F3EF;
+  --border: #E4E9E2;
+  --border-strong: #D3DAD0;
+
+  --accent-wash: rgba(143, 204, 31, 0.12);
+  --accent-wash-strong: rgba(143, 204, 31, 0.2);
+
+  --text-primary: #14231A;
+  --text-secondary: #5B6960;
+  --text-muted: #8B978F;
+
+  --shadow-card: 0 1px 2px rgba(20, 35, 26, 0.06);
+  --topbar-bg: rgba(245, 247, 244, 0.85);
+}

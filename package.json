@@ -1,0 +1,50 @@
+{
+  "name": "fittrack",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A gym management dashboard for members, memberships, attendance, trainers and payments. Built with React 19, Vite and Recharts.",
+  "author": "Ahmad Hassan <ahmad.hsn0099@gmail.com> (https://github.com/Ahmadhsn1)",
+  "license": "MIT",
+  "homepage": "https://github.com/Ahmadhsn1/fittrack-gym-management#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmadhsn1/fittrack-gym-management.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ahmadhsn1/fittrack-gym-management/issues"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "dashboard",
+    "gym-management",
+    "admin-panel",
+    "recharts",
+    "design-tokens",
+    "dark-mode"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide-react": "^1.31.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "oxlint": "^1.75.0",
+    "vite": "^8.2.0"
+  }
+}
