@@ -515,8 +515,12 @@ Applied AI engineer — LLM-powered products end to end: RAG, agents, and the
 full-stack systems around them.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Ahmadhsn1-181717?logo=github&logoColor=white&labelColor=0A0E0D)](https://github.com/Ahmadhsn1)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ahmad--hassan0099-0A66C2?logo=linkedin&logoColor=white&labelColor=0A0E0D)](https://www.linkedin.com/in/ahmad-hassan0099/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ahmadhsn1-0A66C2?logo=linkedin&logoColor=white&labelColor=0A0E0D)](https://www.linkedin.com/in/ahmadhsn1/)
 
 <sub>If this was useful or interesting, a ⭐ is genuinely appreciated.</sub>
 
 </div>
+
+## Case study
+
+The engineering decisions, metrics and screenshots for FitTrack are written up in the [FitTrack case study](https://ahmadhsn1.github.io/work/fittrack/).
